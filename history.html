@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/history.css">
+  <title>履歴</title>
+</head>
+
+<body>
+  <header>
+    <h1>履歴</h1>
+    <div id="menu-btn" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div id="menu">
+      <a href="index.html">目的地検索</a>
+      <a href="recommendations.html">おすすめスポット</a>
+      <a href="login.html">ログアウト</a>
+    </div>
+  </header>
+
+  <div id="history-content">
+    <div>
+      <label for="spot-address">スポットの住所：</label>
+      <input type="text" id="spot-address" placeholder="住所を入力">
+    </div>
+    <div>
+      <label for="spot-info">スポットの情報：</label>
+      <textarea id="spot-info" placeholder="スポットの情報や説明を入力"></textarea>
+    </div>
+    <button onclick="addToHistory()">履歴に追加</button>
+    <p>過去の検索や訪れたスポットの履歴が表示されます。</p>
+
+    <!-- 履歴一覧を表示するリスト -->
+    <ul id="history-list">
+      <!-- 履歴はここに追加 -->
+    </ul>
+  </div>
+  <script src="JavaScript/history.js"></script>
+</body>
+
+</html>

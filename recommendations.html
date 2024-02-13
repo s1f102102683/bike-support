@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/recommendations.css">
+  <title>おすすめスポット</title>
+</head>
+
+<body>
+  <header>
+    <h1>おすすめスポット</h1>
+    <div id="menu-btn" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div id="menu">
+      <a href="index.html">目的地検索</a>
+      <a href="history.html">履歴</a>
+      <a href="login.html">ログアウト</a>
+    </div>
+  </header>
+
+  <div id="content">
+    <ul id="recommendations-list">
+      <li onclick="viewSpotDetails('おすすめスポット2')">
+        <div class="spot-card" data-spot="おすすめスポット2" data-image="images/spot2.jpg">
+          <img src="images/spot2.jpg" alt="Spot 2">
+          <div class="spot-details">
+            <h3>箱根スカイライン</h3>
+            <p class="recommendation-info">神奈川県箱根町</p>
+            <p class="recommendation-info">標高が高く、富士山を望むことができる箱根の有名なツーリングコース。景色が絶景で、気候の良い日には富士山がくっきり見えます。</p>
+          </div>
+        </div>
+      </li>
+      <li onclick="viewSpotDetails('おすすめスポット1')">
+        <div class="spot-card" data-spot="おすすめスポット1" data-image="images/spot1.jpg">
+          <!-- 画像パスをdata属性に追加 -->
+          <img src="images/spot1.jpg" alt="Spot 1">
+          <div class="spot-details">
+            <h3>秩父ツーリングロード</h3>
+            <p class="recommendation-info">埼玉県秩父市</p>
+            <p class="recommendation-info">埼玉県秩父市を中心に広がるツーリングロード。自然に囲まれた景色と、ワインディングロードが魅力。</p>
+          </div>
+        </div>
+      </li>
+
+      <!-- 他のおすすめスポットも同様に追加 -->
+      <li onclick="viewSpotDetails('おすすめスポット3')">
+        <div class="spot-card" data-spot="おすすめスポット3" data-image="images/spot3.jpg">
+          <img src="images/spot3.jpg" alt="Spot 2">
+          <div class="spot-details">
+            <h3>ちばアクアライン</h3>
+            <p class="recommendation-info">千葉県</p>
+            <p class="recommendation-info">東京湾を横断するアクアラインは、海を眺めながらのツーリングが楽しめます。</p>
+          </div>
+        </div>
+      </li>
+      <li onclick="viewSpotDetails('おすすめスポット4')">
+        <div class="spot-card" data-spot="おすすめスポット4" data-image="images/spot4.jpg">
+          <img src="images/spot4.jpg" alt="Spot 2">
+          <div class="spot-details">
+            <h3>富津岬</h3>
+            <p class="recommendation-info">千葉県富津市</p>
+            <p class="recommendation-info">最先端にある最上階の高さ21.8mの五葉松をかたどった展望塔からは、東京湾や対岸の景色、房総丘陵を一望できるパノラマビューを楽しめます。</p>
+          </div>
+        </div>
+      </li>
+      <li onclick="viewSpotDetails('おすすめスポット5')">
+        <div class="spot-card" data-spot="おすすめスポット5" data-image="images/spot5.jpg">
+          <img src="images/spot5.jpg" alt="Spot 2">
+          <div class="spot-details">
+            <h3>足柄峠</h3>
+            <p class="recommendation-info">神奈川県</p>
+            <p class="recommendation-info">箱根と伊豆半島を結ぶ峠で、ツーリングライダーに人気があります。景色が美しく、ワインディングも楽しめます。</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 追加: 画像を表示するモーダル -->
+  <div id="image-modal" class="modal">
+    <!-- HTMLに閉じるボタンを追加 -->
+    <span class="close" id="close-modal-btn" onclick="closeModal">&times;</span>
+    <img class="modal-content" id="modal-image">
+  </div>
+
+
+  <script src="JavaScript/recommendations.js"></script>
+
+</body>
+
+</html>

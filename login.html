@@ -1,0 +1,42 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <h1>ログイン</h1>
+        <div id="menu-btn" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="menu">
+            <a href="index.html">目的地検索</a>
+            <a href="recommendations.html">おすすめスポット</a>
+            <a href="history.html">履歴</a>
+        </div>
+    </header>
+
+    <div id="login-container">
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script src="JavaScript/login.js"></script>
+</body>
+
+</html>

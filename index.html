@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ピンと距離を表示</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+
+</head>
+
+<body>
+  <header>
+    <h1>目的地検索</h1>
+    <div id="menu-btn" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div id="menu">
+      <a href="recommendations.html">おすすめスポット</a>
+      <a href="history.html">履歴</a>
+      <a href="login.html">ログアウト</a>
+    </div>
+  </header>
+
+  <div id="content">
+
+    <div id="input-form">
+      <label for="start">現在地：</label>
+      <input type="text" id="start" placeholder="住所を入力">
+
+      <label for="destination">目的地：</label>
+      <input type="text" id="destination" placeholder="住所を入力">
+
+      <button onclick="showPinsAndDistance()">ピンと距離を表示</button>
+
+      <div id="distance-result"></div>
+    </div>
+
+    <div id="map"></div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="JavaScript/index.js"></script>
+
+</body>
+
+</html>
